@@ -8,7 +8,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar navbar- bg-base-100 shadow-md">
+    <div className="bg-brown-900 text-white shadow-md h-12 justify-center">
       <div className="flex justify-center align-center">
         <div className="dropdown">
           <div
