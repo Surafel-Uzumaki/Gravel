@@ -17,7 +17,7 @@ function App() {
     <Workdone/>
     <AboutUs/>
     <CaseStudy/>
-    <div className="flex gap-2">
+    <div className="flex gap-4">
     <ContactForm/>
     <Testimonial/>
     </div>
