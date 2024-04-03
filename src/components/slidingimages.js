@@ -16,17 +16,17 @@ const SlidingImagesComponent = () => {
   };
 
   return (
-    <div className="sliding-images-container lg:ml-24 sm:m-4">
-      <section className="section-heading">
-        <h2 className="text-2xl font-bold mb-4">Heading Text 1</h2>
+    <div className="sliding-images-container lg:ml-24 sm:m-2">
+      <section className="section-heading ml-4 mr-4">
+        <h2 className="text-2xl font-bold mb-4 mt-4">Heading Text 1</h2>
         <Slider  {...settings}>
-          <div>
+          <div className=' ml-2 mr-2'>
             <img src="./Images/2.jpg" alt="Image 1" className="sliding-image" />
           </div>
-          <div>
+          <div className=' ml-2 mr-2'>
             <img src="./Images/2.jpg" alt="Image 2" className="sliding-image" />
           </div>
-          <div>
+          <div className='ml-2 mr-2'>
             <img src="./Images/2.jpg" alt="Image 3" className="sliding-image" />
           </div>
           {/* Add more images as needed */}

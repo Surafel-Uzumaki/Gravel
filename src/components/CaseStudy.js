@@ -25,8 +25,8 @@ const CaseStudy = () => {
         
         <div className="border border-brown-600 rounded-md">
           <h2 className="text-lg font-semibold text-gray-800 mb-4">Category 1</h2>
-          <div className="relative items-center justify-center">
-              <video controls className="w-[98%] ml-1 " height="200"  style={{ borderRadius: '8px' }}>
+          <div className="relative items-center justify-center flex flex-col">
+              <video controls className="w-[98%] ml-1 sm:h-auto sm:w-[80%] " height="200"  style={{ borderRadius: '8px' }}>
                 <source src="./videos/peter.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
