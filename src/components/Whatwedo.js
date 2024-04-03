@@ -2,7 +2,14 @@ import React from "react";
 
 const Workdone = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    
+    <div className="container mx-auto px-4 py-8 ">
+      <div className=" ">
+    <video controls className=" w-[30%]" height="20" style={{ borderRadius: '8px' }}>
+      <source src="./videos/peter.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    </div>
       <h1 className="text-3xl font-bold text-black mb-8">Soil Testing Company</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div className="rounded-md border border-brown-500 p-3">

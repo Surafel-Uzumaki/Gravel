@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Workdone from "./components/Whatwedo";
 import AboutUs from "./components/Aboutus";
+import SlidingImagesComponent from "./components/slidingimages";
 import CaseStudy from "./components/CaseStudy";
 import ContactForm from "./components/Contactform";
 import Footer from "./components/Footer";
@@ -16,8 +17,9 @@ function App() {
       </header>
     <Workdone/>
     <AboutUs/>
+    <SlidingImagesComponent/>
     <CaseStudy/>
-    <div className="flex gap-4">
+    <div className="flex gap-4  ">
     <ContactForm/>
     <Testimonial/>
     </div>

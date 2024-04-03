@@ -1,121 +1,69 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
-  const [showProjects, setShowProjects] = useState(false);
+  const [showDropdowon, setShowDropdowon] = useState(false);
 
-  const toggleProjects = () => {
-    setShowProjects(!showProjects);
+  const toggleDropdowon = () => {
+    setShowDropdowon(!showDropdowon);
   };
 
   return (
-    <nav className="bg-brown-900 shadow-md">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <div>
-          <a href="#" className="text-white text-lg font-bold">
-           Gravel Geo  
-          </a>
-        </div>
-        <div className="lg:hidden">
-          <button
-            className="text-white text-xl focus:outline-none"
-            onClick={toggleProjects}
-          >
-            <svg
-              className="h-8 w-8 fill-current"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm-1-9a1 1 0 0 1 2 0v3a1 1 0 0 1-2 0v-3zm1-6a1 1 0 0 1 1 1v1a1 1 0 0 1-2 0V6a1 1 0 0 1 1-1zm6 4a1 1 0 0 1 1 1v1a1 1 0 0 1-2 0V9a1 1 0 0 1 1-1z"
-              />
-            </svg>
-          </button>
-        </div>
-        <div
-          className={`lg:flex flex-grow items-center ${
-            showProjects ? "block" : "hidden"
-          }`}
-        >
-          <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-            <li className="nav-item">
-              <a
-                href="#"
-                className="px-3 py-2 flex items-center text-lg font-semibold text-white hover:bg-brown-800 rounded-md"
-              >
-                Home
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                href="#"
-                className="px-3 py-2 flex items-center text-lg font-semibold text-white hover:bg-brown-800 rounded-md"
-              >
-                About Us
-              </a>
-            </li>
-            <li className="nav-item relative">
-              <button
-                onClick={toggleProjects}
-                className="px-3 py-2 flex items-center text-lg font-semibold text-white hover:bg-brown-800 rounded-md focus:outline-none"
-              >
-                Projects
-                <svg
-                  className="w-4 h-4 ml-1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 12a2 2 0 100-4 2 2 0 000 4z"
-                    clipRule="evenodd"
-                  />
-                  <path
-                    fillRule="evenodd"
-                    d="M10 18a2 2 0 100-4 2 2 0 000 4z"
-                    clipRule="evenodd"
-                  />
-                  <path
-                    fillRule="evenodd"
-                    d="M10 6a2 2 0 100-4 2 2 0 000 4z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </button>
-              {showProjects && (
-                <ul className="absolute top-full left-0 w-full bg-brown-900 py-2 rounded-md shadow-md">
+   
+
+<nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+    </a>
+    <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+      <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+          <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
+        </li>
+        <li>
+            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Dropdown <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+  </svg></button>
+          
+            <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                   <li>
-                    <a
-                      href="#"
-                      className="block px-4 py-2 text-lg text-white hover:bg-brown-800"
-                    >
-                      Sites
-                    </a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
                   </li>
                   <li>
-                    <a
-                      href="#"
-                      className="block px-4 py-2 text-lg text-white hover:bg-brown-800"
-                    >
-                      Full Designs
-                    </a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
                   </li>
                 </ul>
-              )}
-            </li>
-            <li className="nav-item">
-              <a
-                href="#"
-                className="px-3 py-2 flex items-center text-lg font-semibold text-white hover:bg-brown-800 rounded-md"
-              >
-                Contact Us
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+                <div class="py-1">
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                </div>
+            </div>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
   );
 };
 
