@@ -25,10 +25,10 @@ const SlidingImagesComponent = () => {
  <div>
             <img src="./Images/2.jpg" alt="Image 1" className="sliding-image " />
           </div>
-          <div>
+          <div className=' ml-2 mr-2'>
             <img src="./Images/2.jpg" alt="Image 2" className="sliding-image" />
           </div>
-          <div>
+          <div className='ml-2 mr-2'>
             <img src="./Images/2.jpg" alt="Image 3" className="sliding-image" />
           </div>
           

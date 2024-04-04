@@ -44,7 +44,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div id="testimonial" className="container mx-auto px-4 py-4 overflow-hidden w-[50%]">
+    <div id="testimonial" className="container mx-auto px-4 py-4 overflow-hidden w-[100%]">
       <h2 className="text-2xl font-bold mb-4 mt-6">Testimonials</h2>
       <div className="flex flex-wrap gap-8 justify-center">
         {testimonials.slice(0, visibleTestimonials).map((testimonial, index) => (

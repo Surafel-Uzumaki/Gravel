@@ -11,7 +11,7 @@ import Testimonial from "./components/Testimonials";
 // Only one declaration of the App function should be present
 function App() {
   return (
-    <div className="App">
+    <div className="App ">
       <header className="App-header">
         <Navbar />
       </header>
@@ -19,7 +19,7 @@ function App() {
     <AboutUs/>
     <SlidingImagesComponent/>
     <CaseStudy/>
-    <div className="flex gap-4  ">
+    <div className="flex gap-4 sm:flex-col lg:flex-row ">
     <ContactForm/>
     <Testimonial/>
     </div>
