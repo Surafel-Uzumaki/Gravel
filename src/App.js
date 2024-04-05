@@ -19,7 +19,7 @@ function App() {
     <AboutUs/>
     <SlidingImagesComponent/>
     <CaseStudy/>
-    <div className="flex gap-4 sm:flex-col lg:flex-row ">
+    <div className="flex gap-4 sm:flex-col lg:flex-row md:flex-col flex-col ">
     <ContactForm/>
     <Testimonial/>
     </div>

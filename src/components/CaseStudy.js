@@ -13,9 +13,8 @@ const CaseStudy = () => {
                 Your browser does not support the video tag.
               </video>
               <div className="absolute top-0 left-0 w-full h-full border-brown-600 border-4 rounded-md" style={{ zIndex: '-1' }}></div>
-          <div className="rounded-md bg-brown-50 p-4  mt-5 flex items-center">
-         
-  <p className="text-brown-800 mt-8 max-w-full">Text askdaskjlfasifjaskfljasjkflasfjnascasjncasklfnaslfkujas goes here.</p>
+          <div className="rounded-md bg-brown-50 p-4  mt-5 ">
+          <p className="text-brown-800 flex  mt-8 ">Text askdaskjlfasifjaskfljasjkflasfjnascasjncasklfnaslfkujas goes here.</p>
 
 
             
