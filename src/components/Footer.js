@@ -20,14 +20,9 @@ const Footer = () => {
                 href="#"
                 className="inline-block px-6 py-2 font-normal transition hover:text-[#d6a701]"
               >
-                Features
+                Services
               </a>
-              <a
-                href="#"
-                className="inline-block px-6 py-2 font-normal transition hover:text-[#d6a701]"
-              >
-                Works
-              </a>
+           
             </div>
             <div className="mb-8 mt-8 w-48 border-b border-solid border-b-white"></div>
             <div className="mb-12 grid w-full max-w-[208px] grid-flow-col grid-cols-4 gap-3">
