@@ -1,16 +1,84 @@
-import React from "react";
-
 const Footer = () => {
-  // Get current date
-  const currentDate = new Date().getFullYear();
-
   return (
-    <footer className="bg-brown-900 py-4">
-      <div className="container mx-auto flex justify-between items-center text-white px-4">
-        <p>Gravel &copy; {currentDate}</p>
-        <p>All rights reserved</p>
+    <>
+      <footer className="bg-brown-600 bg-cover bg-center text-white">
+        <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 ">
+          <div className="flex flex-col items-center">
+            <a href="#" className="mb-8 inline-block max-w-full">
+            <div className="relative uppercase text-lg font-bold px-4 text-white font-serif ">
+        Gravel
       </div>
-    </footer>
+            </a>
+            <div className="text-center font-semibold max-[991px]:ml-0 max-[991px]:mr-0 max-[991px]:py-1">
+              <a
+                href="#"
+                className="inline-block px-6 py-2 font-normal transition hover:text-[#d6a701]"
+              >
+                About
+              </a>
+              <a
+                href="#"
+                className="inline-block px-6 py-2 font-normal transition hover:text-[#d6a701]"
+              >
+                Features
+              </a>
+              <a
+                href="#"
+                className="inline-block px-6 py-2 font-normal transition hover:text-[#d6a701]"
+              >
+                Works
+              </a>
+            </div>
+            <div className="mb-8 mt-8 w-48 border-b border-solid border-b-white"></div>
+            <div className="mb-12 grid w-full max-w-[208px] grid-flow-col grid-cols-4 gap-3">
+              <a
+                href="#"
+                className="ifont-bold mx-auto flex max-w-[24px] flex-col"
+              >
+                <img
+                  src="https://assets.website-files.com/63904f663019b0d8edf8d57c/639972bc5e36f4a882999413_Frame%205479.svg"
+                  alt=""
+                  className="inline-block"
+                />
+              </a>
+              <a
+                href="#"
+                className="mx-auto flex max-w-[24px] flex-col font-bold"
+              >
+                <img
+                  src="https://assets.website-files.com/63904f663019b0d8edf8d57c/639972bf093252f2b2114050_Frame%205480.svg"
+                  alt=""
+                  className="inline-block"
+                />
+              </a>
+              <a
+                href="#"
+                className="ifont-bold mx-auto flex max-w-[24px] flex-col"
+              >
+                <img
+                  src="https://assets.website-files.com/63904f663019b0d8edf8d57c/639972bde1a389ee15d86fc6_Frame%205481-1.svg"
+                  alt=""
+                  className="inline-block"
+                />
+              </a>
+              <a
+                href="#"
+                className="mx-auto flex max-w-[24px] flex-col font-bold"
+              >
+                <img
+                  src="https://assets.website-files.com/63904f663019b0d8edf8d57c/639972bf10337117b26b8e51_Frame%205481.svg"
+                  alt=""
+                  className="inline-block"
+                />
+              </a>
+            </div>
+            <p className="max-[479px]:text-sm">
+              © Copyright 2024. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </>
   );
 };
 

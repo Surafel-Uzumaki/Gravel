@@ -8,23 +8,23 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full h-20 flex justify-between relative items-center lg:px-20 pt-5 px-2 border-b dark:border-gray-700">
-      <div className="relative uppercase text-lg font-bold px-4">
-        Gravel<span className="h-3 w-3 bg-brown-500 rounded-full absolute top-0 right-0"></span>
+    <nav className="w-full h-20 flex justify-between relative items-center lg:px-20 pt-5 px-2 border-b dark:border-gray-700 bg-brown-600">
+      <div className="relative uppercase text-lg font-bold px-4 text-white font-serif ">
+        Gravel
       </div>
         <ul
-       className={`lg:absolute left-[50%] top-[50%]  lg:flex items-center justify-center gap-5 hidden`}
+       className={`lg:absolute left-[50%] top-[50%]  lg:flex items-center justify-center gap-5 hidden text-white`}
        >
-        <li className="hover:underline underline-offset-8 hover:text-blue-500 cursor-pointer">
+        <li className="hover:underline underline-offset-8 hover:text-gray-300 cursor-pointer">
           <a href="#">Home</a>
         </li>
-        <li className="hover:underline underline-offset-8 hover:text-blue-500 cursor-pointer">
+        <li className="hover:underline underline-offset-8 hover:text-gray-300 cursor-pointer">
           <a href="#">About</a>
         </li>
-        <li className="hover:underline underline-offset-8 hover:text-blue-500 cursor-pointer">
+        <li className="hover:underline underline-offset-8 hover:text-gray-300 cursor-pointer">
           <a href="#">Service</a>
         </li>
-        <li className="hover:underline underline-offset-8 hover:text-blue-500 cursor-pointer">
+        <li className="hover:underline underline-offset-8 hover:text-gray-300 cursor-pointer">
           <a href="#">Testimonials</a>
         </li>
       </ul>
@@ -49,17 +49,17 @@ const Navbar = () => {
       </svg>
             {/* Mobile Dropdown */}
             {isDropdownOpen && (
-        <ul className="lg:hidden absolute top-full left-0 right-0 bg-white dark:bg-gray-800 shadow-lg py-2 px-4">
-          <li className="hover:text-blue-500 cursor-pointer mb-2">
+        <ul className="lg:hidden absolute top-full left-0 right-0  dark:bg-gray-800 shadow-lg py-2 px-4 bg-brown-700">
+          <li className="hover:text-white cursor-pointer mb-2">
             <a href="#">Home</a>
           </li>
-          <li className="hover:text-blue-500 cursor-pointer mb-2">
+          <li className="hover:text-white cursor-pointer mb-2">
             <a href="#">About</a>
           </li>
-          <li className="hover:text-blue-500 cursor-pointer mb-2">
+          <li className="hover:text-white cursor-pointer mb-2">
             <a href="#">Service</a>
           </li>
-          <li className="hover:text-blue-500 cursor-pointer mb-2">
+          <li className="hover:text-white cursor-pointer mb-2">
             <a href="#">Testimonials</a>
           </li>
         </ul>
