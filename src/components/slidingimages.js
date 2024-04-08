@@ -18,7 +18,7 @@ const SlidingImagesComponent = () => {
   return (
     <div className="sliding-images-container  ">
       <section className="section-heading">
-        <h2 className="text-2xl font-bold mb-4">Heading Text 1</h2>
+        <h2 className="text-2xl font-bold mb-4 mt-4 font-serif">Heading Text 1</h2>
         
           <div className=" px-8 lg:px-40">
             <Slider  {...settings}>

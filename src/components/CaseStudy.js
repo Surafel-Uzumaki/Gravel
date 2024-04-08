@@ -134,7 +134,7 @@ const CaseStudy = () => {
         {!showMore && (
           <div className="flex justify-center">
             <button
-              className="bg-brown-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-8"
+              className="bg-brown-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-8 font-serif"
               onClick={handleShowMore}
             >
               Show More
@@ -145,7 +145,7 @@ const CaseStudy = () => {
         {showMore && (
           <div className="flex justify-center">
             <button
-              className="bg-brown-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-8"
+              className="bg-brown-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-8 font-serif"
               onClick={handleShowLess}
             >
               Show Less
