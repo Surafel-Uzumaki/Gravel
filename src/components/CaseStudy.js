@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 const CaseStudy = () => {
+ 
+
   return (
     <>
       <div className="container mx-auto px-6 py-8 w-full">
@@ -20,7 +22,7 @@ const CaseStudy = () => {
               </video>
             </a>
             <div className="p-6 text-brown-800">
-              <h5 className="text-xl font-medium mb-2">Video Card</h5>
+              <h5 className="text-xl font-medium mb-2">Video Card 1</h5>
               <p className="text-base mb-2">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
@@ -76,6 +78,8 @@ const CaseStudy = () => {
             </div>
           </div>
         </div>
+
+      
       </div>
     </>
   );
