@@ -8,7 +8,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full h-20 flex justify-between relative items-center lg:px-20 pt-5 px-2 border-b dark:border-gray-700 bg-brown-600">
+    <nav className="navbar w-full h-20 flex justify-between relative items-center lg:px-20 pt-5 px-2 border-b dark:border-gray-700 bg-brown-600">
       <div className="relative uppercase text-lg font-bold px-4 text-white font-serif ">
         Gravel
       </div>

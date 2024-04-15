@@ -5,7 +5,7 @@ const CaseStudy = () => {
 
   return (
     <>
-      <div className="container mx-auto px-6 py-8 w-full">
+      <div className="case-study container mx-auto px-6 py-8 w-full">
         <h1 className="text-3xl font-bold text-black mb-8">Case Study</h1>
         <div className="flex flex-wrap justify-center gap-6">
           <div className="rounded-lg shadow-lg bg-brown-50 max-w-sm w-full md:w-auto m-10 md:m-4">
